@@ -13,6 +13,8 @@ import {
 import MainDashboard from 'views/admin/default';
 import NFTMarketplace from 'views/admin/marketplace';
 import Profile from 'views/admin/profile';
+import Chat from 'views/admin/chat';
+
 import DataTables from 'views/admin/dataTables';
 import RTL from 'views/admin/rtl';
 
@@ -55,6 +57,13 @@ const routes = [
     path: '/profile',
     icon: <Icon as={MdPerson} width="20px" height="20px" color="inherit" />,
     component: <Profile />,
+  },
+   {
+    name: 'Chat',
+    layout: '/admin',
+    path: '/Chat',
+    icon: <Icon as={MdPerson} width="20px" height="20px" color="inherit" />,
+    component: <Chat />,
   },
   {
     name: 'Sign In',
