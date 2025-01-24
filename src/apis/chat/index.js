@@ -1,6 +1,6 @@
 import api from '../../axios';
 
-const AllUsers = async (chatquery) => {
+const obtenerDatos = async (chatquery) => {
   try {
     const response = await api.get(`/api/Users`);
     return response;
@@ -8,4 +8,4 @@ const AllUsers = async (chatquery) => {
     console.error('Error al obtener los datos', error);
   }
 };
-export default AllUsers;
+export default obtenerDatos;
